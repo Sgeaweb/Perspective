@@ -9,7 +9,7 @@ totalYear = yearDifference * 365;
 
 // Month
 birthMonth = parseInt(prompt("Month of Birth", "1"));
-currentMonth = cDate.getMonth();
+currentMonth = cDate.getMonth() + 1;
 monthDifference = currentMonth - birthMonth;
 totalMonth = monthDifference * 31;
 
@@ -31,11 +31,4 @@ for (i = 0; i <= futureCurrentDifference; i++) {
 	block = document.createElement("DIV");
 	block.className = "block";
 	document.body.appendChild(block);
-}
-
-var j;
-for (j = 0; j <= futureCurrentDifference; j++) {
-	empty = document.createElement("DIV");
-	empty.className = "empty";
-	document.body.appendChild(empty);
 }
