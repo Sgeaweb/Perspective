@@ -27,8 +27,15 @@ futureCurrentRemainder = totalFutureDay - futureCurrentDifference;
 
 // Show a number of blocks based on days.
 var i;
-for (i = 0; i <= futureCurrentDifference; i++) {
+for (i = 0; i < futureCurrentDifference; i++) {
 	block = document.createElement("DIV");
 	block.className = "block";
 	document.body.appendChild(block);
+
+	const box = i + 1;
+
+	block.addEventListener("click", function() {
+		console.log(box);
+	})
+
 }
